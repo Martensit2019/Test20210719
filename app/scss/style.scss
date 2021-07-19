@@ -1,0 +1,133 @@
+.container {
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+  // border: 1px solid red;
+}
+.app{
+  min-height: 100%;
+  font-family: Montserrat;
+}
+.app__wrapper{
+  display: flex;
+}
+.aside{
+  width: 263px;
+  background-color: #9d9d9d;
+}
+.main{
+  width: 100%;
+
+}
+.navbar {
+  height: 50px;
+  margin-bottom: 30px;
+  background-color: #ccc;
+}
+.securityhistory {
+  padding: 0 40px 65px;
+  &__top {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    img {
+      width: 34px;
+      height: 34px;
+      cursor: pointer;
+      & + img {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.navigation {
+  padding: 0 40px;
+}
+button + button {
+  margin-left: 10px;
+}
+.btn {
+  width: 150px;
+  height: 42px;
+  background-color: transparent;
+  border: 1px solid #2469f0;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #2469f0;
+  cursor: pointer;
+}
+.btn--blue {
+  background-color: #2469f0;
+  color: #fff;
+}
+@media (max-width: 450px) {
+  .btn {
+    width: 100%;
+  }
+  button + button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+.table-box {
+  max-width: 100%;
+}
+.table {
+  width: 100%;
+  border-spacing: 0;
+  th {
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: #a3a3a3;
+  }
+  td {
+    padding: 15px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1d1d1f;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .lastth,
+  .lasttd {
+    text-align: right;
+  }
+  .lastth {
+    padding-right: 70px;
+  }
+  table td {
+    border: 3px solid red;
+  }
+}
+@media (max-width: 600px) {
+  .aside{
+    display: none;
+  }
+  .table-box {
+    overflow-x: scroll;
+    td {
+      min-width: 140px;
+    }
+  }
+}
